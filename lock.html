@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Page</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('mainback.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+       
+
+        .login-container {
+            /* background: rgba(255, 255, 255, 0.9);
+             */
+             /* background: url('secback.jpg') no-repeat center center fixed; Add this line for the login container background image */
+            border-radius: 17px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 400);
+            overflow: hidden;
+            width: 350px;
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        } */
+
+        .login-container h2 {
+            /* color: #2C3E50; */
+            color:white;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        /* .login-container input:focus {
+            border-color: #3498db;
+        } */
+
+        /* .login-container button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        } */
+
+        /* .login-container button:hover {
+            background-color: #2980b9;
+        } */
+        #securedContent {
+            display: none;
+            /* Hide the secured content initially */
+        }
+    </style>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="login-container">
+        <h2 id="loginhead" style="color: #fce7a9;">Login here</h2>
+        <!-- <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form> -->
+
+        
+    <form id="loginForm" onsubmit="event.preventDefault(); validateLogin();">
+      <!-- <label for="username">Username:</label> -->
+      <input type="text" id="username" name="username" placeholder="Username" required><br>
+
+      <!-- <label for="password">Password:</label> -->
+      <input type="password" id="password" name="password" placeholder="Password" required><br>
+
+      <input class="menu-item current-menu-item menu-toggle"   style="background-color: #fce7a9; color: black; font-size: 20px;" type="submit" value="Login" >
+    </form>
+    <div id="securedContent">
+      <div id="oncekl">
+          <input style="background-color: #fce7a9; color: black; font-size: 20px;"  type="button" onclick="check()" value="Start Debug">
+
+      </div>
+      <!-- <img src="example.jpg" alt="Example Image"> -->
+  </div> 
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="lock.js"></script>
+   
+  </body>
+</html>

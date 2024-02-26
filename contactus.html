@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        body {
+            background: url('mainback.jpg') center/cover;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background-color: #f4f4f4; */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        header {
+            /* background: url('one.jpeg') ; */
+            color: #fce7a9;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #fce7a9;  /* Adding a border to the bottom for a stylish look */
+        }
+
+        /* .team-container { */
+            
+            /* justify-content: center; */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* gap: 20px; */
+            /* margin: 50px; */
+        /* } */
+
+        .team-container {
+        display: flex;
+        flex-direction: column; /* To stack items vertically */
+        align-items: center; /* To horizontally center items */
+        gap: 0.2px;
+        margin: 30px ; 
+        }
+        
+        
+        .team-member {
+          
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 500);
+            max-width: 320px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .member-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        h3 {
+            margin-top: 0;
+            color:#fce7a9;;
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meet Our Awesome Team</h1>
+    </header>
+
+    <div class="team-container">
+
+        <div class="team-member">
+            <div class="member-info">
+                <h3>Jaydeep Boricha</h3>
+                <p>Branch: Electronics Communication (EC)</p>
+                <p>Email: jaydeepboricha02@gmail.com</p>
+                <p>Phone: +91 9099989993</p>
+            </div>
+        </div>
+        
+<br><br>
+        <div class="team-member">
+            <div class="member-info">
+                <h3>Uday Gajjar</h3>
+                <p>Branch: Electronics Communication (EC)</p>
+                <p>Email: udaygajjaracc@gmail.com</p>
+                <p>Phone: +91 9824438129</p>
+            </div>
+        </div>
+<br><br>
+        <div class="team-member">
+        <div class="member-info">
+                <h3>Pradeepsinh Rajpurohit</h3>
+                <p>Branch: Electronics Communication (EC)</p>
+                <p>Email: pradeep92950@gmail.com</p>
+                <p>Phone: +91 9983388068</p>
+            </div>
+        </div>
+
+       
+        <!-- Add more team members as needed -->
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Excel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+
+<button onclick="downloadhumidity()">Download Humidity Excel</button><br>
+<button onclick="downloadtemperature()">Download Temperature Excel</button>
+<br><button onclick="downloadpm10()">Download pm10 Excel</button>
+<br><button onclick="downloadpm25()">Download pm25 Excel</button>
+<br><button onclick="downloadaltitude()">Download Altitude Excel</button>
+<br><button onclick="downloadpressure()">Download Pressure Excel</button>
+
+<script src="download.js"></script>
+<!-- <script src="temp.js"></script> -->
+</body>
+</html>
